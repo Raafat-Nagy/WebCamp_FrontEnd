@@ -1,0 +1,15 @@
+Header      =>  YES
+Nav         =>  YES
+Main        =>  YES
+Aside       =>  YES
+Picture     =>  YES
+Figure      =>  YES
+Footer      =>  YES
+FigCaption  =>  YES
+Section     =>  YES
+Command     =>  NO
+Ruby        =>  YES
+Data        =>  YES
+Article     =>  YES
+Install     =>  NO
+Text        =>  NO

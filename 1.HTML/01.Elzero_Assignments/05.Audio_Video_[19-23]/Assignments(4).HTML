@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Video</title>
+    <meta name="description" content="Description" />
+  </head>
+  <body>
+    <video
+      controls
+      autoplay
+      muted
+      width="600px"
+      height="400"
+      poster="https://www.pixelstalk.net/wp-content/uploads/2016/09/Download-HD-Images-Video.jpg"
+    >
+      <source
+        src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4"
+        type="video/mp4"
+      />
+      <source src="Video.ogg" type="video/ogg" />
+      <source src="Video.webm" type="video/webm" />
+      <source src="Video.mkv" type="video/mkv" />
+      Your Browser Does Not Support Video
+      <track
+        src="captionFileEn.vtt"
+        srclang="en"
+        label="English"
+        kind="captions"
+      />
+      <track
+        src="captionFileIt.vtt"
+        srclang="it"
+        label="Italian"
+        kind="captions"
+      />
+    </video>
+  </body>
+</html>

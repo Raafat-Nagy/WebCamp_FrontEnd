@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form action="" method="get">
+      <input
+        type="hidden"
+        name="token"
+        value="b92f1fc2fce391ad7af633723afd3055"
+      />
+      <div>
+        <label for="email">Email</label>
+        <br />
+        <input id="email" type="email" name="email" value="o@o.com" readonly />
+      </div>
+      <br />
+      <div>
+        <label for="username">Username</label>
+        <br />
+        <input
+          id="username"
+          type="text"
+          name="username"
+          autofocus
+          required
+          minlength="5"
+          maxlength="20"
+        />
+        <br />
+      </div>
+      <hr />
+      <div>
+        <input type="submit" value="Send" />
+        <input type="reset" value="Empty" />
+      </div>
+    </form>
+  </body>
+</html>

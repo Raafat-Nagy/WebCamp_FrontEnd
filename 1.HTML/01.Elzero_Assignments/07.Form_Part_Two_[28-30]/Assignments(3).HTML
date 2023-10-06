@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form action="" method="get">
+      <div>
+        <label for="book">Choose Book:</label>
+        <select name="ProgLang" id="book">
+          <optgroup label="PHP">
+            <option value="PHPV5.0">V5.0</option>
+            <option value="PHPV7.0">V7.0</option>
+            <option value="PHPV8.0">V8.0</option>
+          </optgroup>
+          <optgroup label="Python">
+            <option value="PyV2.0">V2.0</option>
+            <option value="PyV3.0">V3.0</option>
+            <option value="PyV3.9">V3.9</option>
+          </optgroup>
+        </select>
+      </div>
+      <hr />
+      <div>
+        <textarea
+          name="brief"
+          cols="50"
+          rows="10"
+          placeholder="Write Here Why You Want To Learn Programming"
+        ></textarea>
+      </div>
+      <div>
+        <input type="submit" value="Send" />
+        <input type="reset" value="Empty" />
+      </div>
+    </form>
+  </body>
+</html>
