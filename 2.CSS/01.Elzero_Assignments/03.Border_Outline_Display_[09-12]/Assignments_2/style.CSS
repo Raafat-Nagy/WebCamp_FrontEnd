@@ -1,0 +1,21 @@
+div {
+  background-color: #eee;
+  font-size: 20px;
+  width: 400px;
+  padding: 15px;
+  margin: 60px auto;
+  outline: #eee solid 15px;
+}
+
+.shape-1 {
+  border-left: 10px solid #e91e63;
+}
+
+.shape-2 {
+  border-left: 10px solid blue;
+  visibility: hidden;
+}
+
+.shape-3 {
+  border-left: 10px solid #009688;
+}
