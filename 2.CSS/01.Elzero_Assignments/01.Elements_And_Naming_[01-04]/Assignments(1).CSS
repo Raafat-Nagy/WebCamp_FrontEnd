@@ -3,7 +3,7 @@
 .title {
 }
 
-/*Select All Element With 'id="nav"' In Html File */
+/*Select Element With 'id="nav"' In Html File */
 #nav {
 }
 
@@ -11,7 +11,6 @@
   div {
   }
 
-  /*Select All '<h2>' Element In Html File */
-/* ? */
+/*Select All '<h2>' Element In Html File */
 h2 {
 }
