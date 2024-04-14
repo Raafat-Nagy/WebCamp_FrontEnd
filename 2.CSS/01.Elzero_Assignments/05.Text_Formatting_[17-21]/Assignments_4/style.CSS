@@ -1,0 +1,16 @@
+a {
+  background-color: #009688;
+  display: block;
+  width: fit-content;
+  margin: 30px auto;
+  padding: 30px;
+
+  font-size: 50px;
+  font-family: Cairo, sans-serif;
+
+  color: white;
+  text-decoration: none;
+  text-transform: capitalize;
+
+  border-bottom: solid 20px #00514a;
+}
