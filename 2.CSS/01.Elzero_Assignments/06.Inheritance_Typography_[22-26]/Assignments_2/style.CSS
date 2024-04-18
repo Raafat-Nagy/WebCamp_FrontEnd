@@ -1,0 +1,21 @@
+div {
+  padding: 30px;
+  font-size: 2em;
+  text-align: center;
+}
+
+.one {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.two {
+  font-family: "Cairo", sans-serif;
+  font-weight: 700;
+}
+
+.three {
+  font-family: "Jomhuria", serif;
+  font-weight: 400;
+}

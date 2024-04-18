@@ -1,0 +1,20 @@
+html {
+  font-size: 20px;
+}
+
+div {
+  padding: 30px;
+  text-align: center;
+}
+
+.one {
+  font-size: 2.5rem;
+}
+
+.two {
+  font-size: 2rem;
+}
+
+.three {
+  font-size: 1.5rem;
+}
