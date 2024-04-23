@@ -1,0 +1,32 @@
+p {
+  background-color: #eee;
+  max-width: 400px;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 120px;
+  border-left: solid 5px #e91e63;
+
+  position: relative;
+}
+
+P::before {
+  content: attr(data-person);
+  position: absolute;
+
+  height: 40px;
+  line-height: 40px;
+  padding: 0 15px;
+  background-color: #dddddd;
+  left: -110px;
+  top: calc(50% - 20px);
+}
+
+P::after {
+  content: "";
+  position: absolute;
+
+  border: solid 15px transparent;
+  border-right-color: #e91e63;
+  left: -33px;
+  top: calc(50% - 15px);
+}
