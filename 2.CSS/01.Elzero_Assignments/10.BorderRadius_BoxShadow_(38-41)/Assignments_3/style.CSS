@@ -1,0 +1,81 @@
+.container {
+  width: 550px;
+  margin: 50px auto;
+  text-align: center;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.container .basic-card,
+.container .pro-card {
+  width: 250px;
+  height: 300px;
+  background-color: #eee;
+  float: left;
+  position: relative;
+}
+
+.container .basic-card {
+  margin-right: 25px;
+}
+.container .pro-card {
+  margin-left: 25px;
+}
+
+.container .title,
+.container .price {
+  width: 200px;
+  align-content: center;
+  position: absolute;
+  left: 25px;
+}
+
+.container .title {
+  height: 40px;
+  background-color: #03a9f4;
+  color: white;
+  top: 20px;
+
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.container .price {
+  height: 200px;
+  background-color: #ddd;
+  border-radius: 50%;
+  bottom: 20px;
+  font-size: 30px;
+}
+
+.container .basic-card::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  border: solid 1px #03a9f4;
+  right: -25px;
+}
+
+.container .pro-card::before {
+  content: "or";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  align-content: center;
+  background-color: #03a9f4;
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+  top: calc(50% - 15px);
+  left: calc(-25px - 15px);
+
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
