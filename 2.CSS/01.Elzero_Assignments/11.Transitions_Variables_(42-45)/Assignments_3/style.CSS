@@ -1,0 +1,15 @@
+/* 
+:root {
+  --mainColor: #009688;
+  --mainPadding: 10px;
+} 
+*/
+
+div {
+  width: 70%;
+  margin: 20px auto;
+  border: solid 3px var(--mainColor, black);
+  padding: var(--mainPadding, 10px);
+  color: var(--mainColor, red);
+  font-family: Arial, Helvetica, sans-serif;
+}

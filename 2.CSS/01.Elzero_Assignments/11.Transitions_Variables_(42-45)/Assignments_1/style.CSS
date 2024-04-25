@@ -1,0 +1,37 @@
+div {
+  margin: 10px auto;
+  padding: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.container {
+  width: 400px;
+  height: 250px;
+  background-color: #eee;
+  margin-top: 100px;
+
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.container:hover {
+  margin-top: 50px;
+}
+
+.container div {
+  background-color: #ddd;
+
+  transition: 0.5s 0.5s;
+  -webkit-transition: 0.5s 0.5s;
+  -moz-transition: 0.5s 0.5s;
+  -ms-transition: 0.5s 0.5s;
+  -o-transition: 0.5s 0.5s;
+}
+
+.container:hover div {
+  margin-top: 60px;
+}
