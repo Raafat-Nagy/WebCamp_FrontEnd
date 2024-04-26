@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --padding: 10px;
+  --color: #dddd;
+}
+
+.page {
+  display: flex;
+  flex-flow: column wrap;
+  background-color: #eee;
+  padding: var(--padding);
+}
+
+header .links,
+header .logo,
+main .content,
+main .sidebar,
+footer {
+  background-color: var(--color);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .links,
+header .logo {
+  height: 40px;
+  align-content: center;
+}
+
+header .links {
+  flex-basis: 89%;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  flex-shrink: 5;
+  padding-right: 15px;
+}
+
+.logo {
+  flex-basis: 10%;
+  text-align: center;
+}
+
+header .links li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  height: 400px;
+  margin: 8px 0;
+}
+
+main .content,
+main .sidebar {
+  padding: var(--padding);
+}
+
+main .content {
+  flex-basis: 79%;
+}
+
+main .sidebar {
+  flex-basis: 20%;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+footer .copyright,
+footer .design {
+  flex-basis: 50%;
+  padding: 0 var(--padding);
+}
+
+footer .design {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
