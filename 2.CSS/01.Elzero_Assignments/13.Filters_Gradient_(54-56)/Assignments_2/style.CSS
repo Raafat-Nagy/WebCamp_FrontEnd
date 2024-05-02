@@ -1,0 +1,28 @@
+div {
+  box-sizing: border-box;
+  background-color: #eee;
+  width: 600px;
+  margin: 25px auto;
+  padding: 20px;
+  caret-color: red;
+
+  position: relative;
+}
+
+div::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: black;
+
+  bottom: -4px;
+  left: 0;
+
+  background-image: linear-gradient(90deg, #f44336 50%, #019789 50%);
+}
+
+.two,
+.three {
+  color: #757575;
+}
