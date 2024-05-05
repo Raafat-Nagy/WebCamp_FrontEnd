@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5em;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 15px;
+  background-color: #eee;
+  padding: 60px;
+}
+
+.person {
+  padding: 15px;
+  border-bottom: solid 2px #ff3d00;
+  position: relative;
+}
+
+.person::after {
+  content: '"';
+  position: absolute;
+  bottom: -5px;
+  right: 15px;
+  font-size: 35px;
+  rotate: 20deg;
+}
+
+.person1,
+.person2,
+.person4,
+.person6,
+.person7,
+.person9,
+.person10 {
+  background-color: white;
+}
+
+.person3,
+.person5,
+.person8 {
+  background-color: black;
+  color: white;
+}
+
+.person1 {
+  grid-column: span 2;
+}
+
+.person3 {
+  grid-row: 1 / span 3;
+  grid-column-start: 4;
+}
+
+.person4 {
+  grid-row: 2 / span 2;
+  grid-column-start: 1;
+}
+
+.person5 {
+  grid-column: span 2;
+}
+
+.person6 {
+  grid-column: span 2;
+}
+
+.name,
+.description {
+  font-weight: bold;
+}
+
+.job,
+.content {
+  color: #a8a8a8;
+}
+
+.description {
+  padding: 15px 0;
+}
