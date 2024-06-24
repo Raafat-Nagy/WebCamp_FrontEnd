@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --frontColor: #fa3664;
+  --backColor: #03a9f4;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 600px;
+}
+
+div {
+  width: 200px;
+  height: 200px;
+  background-color: var(--backColor);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  -webkit-transition: transform 1s;
+  -moz-transition: transform 1s;
+  -ms-transition: transform 1s;
+  -o-transition: transform 1s;
+}
+
+div:hover {
+  transform: rotateX(-180deg);
+  -webkit-transform: rotateX(-180deg);
+  -moz-transform: rotateX(-180deg);
+  -ms-transform: rotateX(-180deg);
+  -o-transform: rotateX(-180deg);
+}
+
+div::before,
+div::after {
+  position: absolute;
+  background-color: var(--frontColor);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  align-content: center;
+  font-size: 26px;
+
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+div::before {
+  content: "Front";
+  background-color: var(--frontColor);
+}
+
+div::after {
+  content: "Back";
+  background-color: var(--backColor);
+  transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  -ms-transform: rotateX(180deg);
+  -o-transform: rotateX(180deg);
+}
