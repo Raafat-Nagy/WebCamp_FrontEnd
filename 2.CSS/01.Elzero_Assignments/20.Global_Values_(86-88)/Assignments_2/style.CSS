@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --mainColor: #ddd;
+}
+.arrow {
+  background-color: var(--mainColor);
+  width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  position: relative;
+}
+
+.arrow::after {
+  content: "";
+  position: absolute;
+  border: solid 20px transparent;
+}
+
+.top::after {
+  top: 0;
+  left: 50%;
+  border-bottom-color: var(--mainColor);
+  transform: translate(-50%, -100%);
+  -webkit-transform: translate(-50%, -100%);
+  -moz-transform: translate(-50%, -100%);
+  -ms-transform: translate(-50%, -100%);
+  -o-transform: translate(-50%, -100%);
+}
+
+.right::after {
+  top: 50%;
+  right: 0;
+  border-left-color: var(--mainColor);
+  transform: translate(100%, -50%);
+  -webkit-transform: translate(100%, -50%);
+  -moz-transform: translate(100%, -50%);
+  -ms-transform: translate(100%, -50%);
+  -o-transform: translate(100%, -50%);
+}
+
+.bottom::after {
+  bottom: 0;
+  left: 50%;
+  border-top-color: var(--mainColor);
+  transform: translate(-50%, 100%);
+  -webkit-transform: translate(-50%, 100%);
+  -moz-transform: translate(-50%, 100%);
+  -ms-transform: translate(-50%, 100%);
+  -o-transform: translate(-50%, 100%);
+}
+
+.left::after {
+  top: 50%;
+  left: 0;
+  border-right-color: var(--mainColor);
+  transform: translate(-100%, -50%);
+  -webkit-transform: translate(-100%, -50%);
+  -moz-transform: translate(-100%, -50%);
+  -ms-transform: translate(-100%, -50%);
+  -o-transform: translate(-100%, -50%);
+}
