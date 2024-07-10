@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Learn JavaScript</title>
+    <script>
+      // Code One
+      /* this code will not work  "error"
+      the element "el" hasn't load in the document yet */
+      document.getElementById("el").style.color = "red";
+    </script>
+    <script>
+      // Code Two => Work
+      window.onload = function () {
+        document.getElementById("el").style.color = "red";
+      };
+    </script>
+  </head>
+  <body>
+    <h1 id="el">Page Title</h1>
+    <script>
+      // Code Three  => Work
+      document.getElementById("el").style.color = "red";
+    </script>
+  </body>
+</html>
